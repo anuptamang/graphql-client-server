@@ -5,7 +5,7 @@ import { ApolloProvider } from 'react-apollo'
 import AddBook from './components/AddBook'
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: '/graphql',
 })
 class App extends Component {
   render() {

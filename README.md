@@ -1,6 +1,6 @@
-# This is the repo for the GraphQL Server and Client source code 🤩
+## This is the repo for the GraphQL Client and Server source code 🤩
 
-## GraphQL Server Implementation
+### GraphQL Server Implementation
 - Node.js
 - Express.js
 - Express GraphQL
@@ -8,6 +8,6 @@
 - MongoDB Atlas
 - Mongoose ORM 
 
-## GraphQL Client Implementation
+### GraphQL Client Implementation
 - React.js
 - Apllo Client

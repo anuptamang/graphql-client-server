@@ -1,12 +1,18 @@
 {
-  "name": "graphql",
+  "name": "graphqlclient",
+  "proxy": "http://127.0.0.1:4000",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.3.19",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "apollo-boost": "^0.4.9",
+    "graphql": "^15.5.0",
+    "lodash": "^4.17.21",
     "react": "^17.0.2",
+    "react-apollo": "^3.1.5",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"

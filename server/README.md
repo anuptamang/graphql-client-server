@@ -2,4 +2,6 @@
 
 #### create .env file with the following config
 
-- MONGO_URI= <MONGODB_URI_STRING>
+- NODE_ENV = development
+- PORT=4000
+- MONGO_URI=<MONGODB_URI_STRING>

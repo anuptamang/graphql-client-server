@@ -45,28 +45,34 @@ class AddBook extends Component {
   render() {
     return (
       <form id='add-book' onSubmit={this.submitForm.bind(this)}>
-        <div className='field'>
+        <div className='form-group'>
           <label htmlFor=''>Book Name:</label>
           <input
+            className='form-control'
             type='text'
             onChange={(e) => this.setState({ name: e.target.value })}
           />
         </div>
-        <div className='field'>
+        <div className='form-group'>
           <label htmlFor=''>Genre:</label>
           <input
+            className='form-control'
             type='text'
             onChange={(e) => this.setState({ genre: e.target.value })}
           />
         </div>
-        <div className='field'>
+        <div className='form-group'>
           <label htmlFor=''>Author:</label>
-          <select onChange={(e) => this.setState({ authorId: e.target.value })}>
+          <select
+            className='form-control'
+            onChange={(e) => this.setState({ authorId: e.target.value })}
+          >
             <option value=''>Select author</option>
             {this.displayAuthors()}
           </select>
         </div>
         <button
+          className='btn btn-info'
           disabled={
             !this.state.name || !this.state.genre || !this.state.authorId
           }

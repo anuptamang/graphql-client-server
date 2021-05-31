@@ -12,15 +12,17 @@ class BookDetails extends Component {
           {loading ? (
             <div>Loading..</div>
           ) : (
-            <div>
-              <h2>Book Details:</h2>
-              <h3>{book.name}</h3>
-              <p>{book.genre}</p>
-              <p>{book.author.name}</p>
-              <p>All books by this author:</p>
-              <ul>
+            <div className='card p-3'>
+              <h3>Book Details:</h3>
+              <h4>Name: {book.name}</h4>
+              <p>Genre: {book.genre}</p>
+              <p>Author: {book.author.name}</p>
+              <p>All books by {book.author.name}:</p>
+              <ul className='list-inline'>
                 {book.author.books.map((book) => (
-                  <li key={book.id}>{book.name}</li>
+                  <li className='btn btn-secondary m-1' key={book.id}>
+                    {book.name}
+                  </li>
                 ))}
               </ul>
             </div>

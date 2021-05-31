@@ -13,7 +13,7 @@ class App extends Component {
       <ApolloProvider client={client}>
         <div className='app'>
           <div className='container py-4'>
-            <h1>GraphQL</h1>
+            <h1 className='text-center mb-3'>Books Library</h1>
             <BookList />
             <AddBook />
           </div>

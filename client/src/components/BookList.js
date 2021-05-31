@@ -18,6 +18,7 @@ class BookList extends Component {
     } else {
       return data.books.map((book) => (
         <li
+          className='btn btn-secondary m-1'
           onClick={(e) => {
             this.setState({ selected: book.id })
           }}
@@ -33,7 +34,9 @@ class BookList extends Component {
     return (
       <div className='row'>
         <div className='col-md-6'>
-          <ul id='book-list'>{this.displayBooks()}</ul>
+          <ul className='list-unstyled' id='book-list'>
+            {this.displayBooks()}
+          </ul>
         </div>
         <div className='col-md-6'>
           <BookDetails bookId={this.state.selected} />

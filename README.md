@@ -11,3 +11,7 @@
 ### GraphQL Client Implementation
 - React.js
 - Apllo Client
+- lodash
+
+#### Demo Frontend: https://graphql-akt.herokuapp.com/
+#### Demo GraphQL: https://graphql-akt.herokuapp.com/graphql
